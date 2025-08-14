@@ -62,17 +62,24 @@ header nav a:hover {
 /* 🎬 Filme principal */
 .filme-principal {
     font-size: 16px;
-    /* Combina um gradiente com a imagem de fundo para escurecê-la */
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('../img/trofeus.jpg');
-    background-size: cover;              /* Garante que a imagem cubra toda a área */
-    background-position: center;         /* Centraliza a imagem no container */
-    height: 70vh;                        /* Define a altura em 70% da viewport */
+    background-size: 100% auto;
+    background-position: center;
+    height: 70vh;
     display: flex;
-    align-items: center;                 /* Alinha o conteúdo verticalmente no centro */
+    align-items: center;
+    cursor: pointer;
+    /* Adiciona transições para o background-size e para a cor do título */
+    transition: background-size 0.5s ease-in-out;
+}
+
+.filme-principal:hover {
+    /* Aumenta o tamanho da imagem de background para criar o zoom */
+    background-size: 105% auto;
 }
 
 .filme-principal .container {
-    max-width: 700px;                    /* Limita a largura do conteúdo do filme principal */
+    max-width: 700px;
     padding: 0 50px;
 }
 
@@ -80,11 +87,19 @@ header nav a:hover {
     font-size: 40px;
     margin-bottom: 15px;
     font-weight: bold;
+    color: var(--branco); /* Garante que a cor padrão seja branco */
+    /* Adiciona a transição de cor, que será ativada pelo hover do container pai */
+    transition: color 0.3s ease-in-out; 
+}
+
+.filme-principal:hover .titulo {
+    /* Muda a cor do título ao passar o mouse */
+    color: #FFD700;
 }
 
 .filme-principal .descricao {
     margin-bottom: 30px;
-    line-height: 1.5;                    /* Define o espaçamento entre as linhas */
+    line-height: 1.5;
 }
 
 /* 🎯 Botões */
@@ -108,9 +123,80 @@ header nav a:hover {
     margin-right: 8px;                   /* Espaço entre o ícone e o texto */
 }
 
+/* ===========================
+   Carrossel de Filmes
+   =========================== */
+.carrosel-filmes {
+    padding: 0 50px;
+}
+
+.titulo-carrosel {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.carrosel {
+    display: flex;                       /* Usa Flexbox para os itens do carrossel */
+    flex-wrap: wrap;                     /* Permite que os itens quebrem para a próxima linha */
+    gap: 10px;                           /* Adiciona um espaço entre os itens */
+    padding-bottom: 20px;
+}
+
+.carrosel .box-filme {
+    position: relative;
+    width: calc(25% - 10px);             /* Ajusta a largura para 4 itens por linha, descontando o gap */
+    height: 150px;
+    cursor: pointer;
+    transition: transform .2s ease;
+    overflow: hidden;
+}
+
+.carrosel .box-filme:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.carrosel .box-filme img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Estilo para a nova seção de informações sobre o filme */
+.info-filme {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+.box-filme:hover .info-filme {
+    opacity: 1;
+}
+
+.info-filme h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #FFD700;                      /* Cor dourada para o título. */
+}
+
+.info-filme p {
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.2;
+    color: #eee;
+}
+
 /* 📌 Rodapé */
 footer {
-    text-align: center;                  /* Centraliza o texto */
+    text-align: center;
     padding: 20px;
     font-size: 14px;
     color: #aaa;
