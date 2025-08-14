@@ -1,83 +1,45 @@
-:root{
-    --preto: #141414;
-    --vermelho: #E50914;
+/* ===========================
+   Variáveis globais (cores e fontes)
+   =========================== */
+:root {
+    --preto: #141414;         /* cor de fundo principal */
+    --vermelho: #E50914;      /* cor do destaque / logo */
+    --branco: #fff;            /* cor branca */
+    --cinza: #AAA;             /* cor cinza para links e textos secundários */
+    --fonte-principal: 'Times New Roman', Times, serif; /* fonte base */
 }
 
-*{
+/* ===========================
+   Reset básico de elementos
+   =========================== */
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-/*elementos base*/
-body{
-    background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
+    box-sizing: border-box; /* inclui padding e border no cálculo de largura */
 }
 
+/* ===========================
+   Corpo da página
+   =========================== */
+body {
+    background: var(--preto);            /* fundo escuro estilo Netflix */
+    font-family: var(--fonte-principal); /* fonte base */
+    color: var(--branco);                /* cor do texto */
+}
+
+/* ===========================
+   Header e Navegação
+   =========================== */
 header .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    display: flex;                       /* layout em linha */
+    flex-direction: row;                 /* itens na horizontal */
+    align-items: center;                 /* alinha verticalmente ao centro */
+    justify-content: space-between;      /* espaço entre logo e nav */
 }
 
-header .logo{
-    color: var(--vermelho);
-    font-family: "Arial Black", Times;
-    font-size: 40px;
+/* Logo do site */
+header .logo {
+    color: var(--vermelho);             /* cor vermelha */
+    font-family: "Arial Black", Times;  /* fonte do logo */
+    font-size: 40px;                     /* tamanho do logo */
     margin-left: 5px;
-    cursor: pointer;
-}
-
-header nav a{
-    text-decoration: none;
-    color: #AAA;
-    margin-right: 10px;
-}
-
-header nav a:hover{
-    color: #fff;
-    transition: .3s ease all;
-}
-/*filme principal*/
-.filme-principal{
-    font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url('/img/trofeus.jpg');
-    height: 400px;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.filme-principal .descricao{
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-
-.filme-principal .titulo{
-    margin-top: 15%;
-    font-size: 40px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.botao{
-    background-color: rgba(0,0,0.50);
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    margin-right: 15px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: .3s ease all;
-}
-.botao:hover{
-    background-color: white;
-    color: black;
-}
-
-.botao i{
-    margin-right: 8px;
-}
