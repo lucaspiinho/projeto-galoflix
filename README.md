@@ -34,26 +34,26 @@ Feito como prática durante o curso **DIO | Inter**.
     ```bash
     git clone https://github.com/lucaspiinho/projeto-galoflix.git
 
-2. Abra o projeto no seu navegador:
-Abra index.html diretamente ou use o VS Code e a extensão Live Server.
+2. Abra o projeto no seu navegador:  
+- Abra index.html diretamente ou use o VS Code e a extensão Live Server.
 
 ---
 
 📸 Visual
 
-Destaque para o "Filme principal" com título, descrição e botões de ação.
-Navegação superior com Home, Filmes, Fotos e Reportagens.
+- Destaque para o "Filme principal" com título, descrição e botões de ação.
+- Navegação superior com Home, Filmes, Fotos e Reportagens.
 
 ---
 
 📝 Autor
 
-Lucas Pinho
+Lucas Pinho  
 Foco em desenvolvimento web e projetos pessoais.
 
 ---
 
 📌 Observações
 
-Este projeto é apenas uma prática de interface, não há backend ou funcionalidades reais de streaming.
-Código pronto para customização e aprimoramento com CSS, JavaScript ou integração com APIs.
+- Este projeto é apenas uma prática de interface, não há backend ou funcionalidades reais de streaming.  
+- Código pronto para customização e aprimoramento com CSS, JavaScript ou integração com APIs.
