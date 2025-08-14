@@ -1,32 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Define a codificação de caracteres da página -->
     <meta charset="UTF-8">
-
-    <!-- Configura a viewport para responsividade em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Meta description para SEO -->
-    <meta name="description" content="Resumo do ano do Galo em 2021: campeão Brasileiro, Mineiro e da Copa do Brasil.">
-
-    <!-- Link para o arquivo CSS principal -->
+    <!-- Importa o CSS para aplicar estilo na página -->
     <link rel="stylesheet" href="style/style.css">
-
-    <!-- FontAwesome para ícones nos botões -->
+    <!-- Importa biblioteca de ícones para botões -->
     <script src="https://kit.fontawesome.com/20379c03e1.js" crossorigin="anonymous"></script>
-
-    <!-- Título da página -->
     <title>GaloFlix</title>
 </head>
 <body>
-    <!-- Cabeçalho da página -->
+
+    <!-- Cabeçalho fixo que carrega o nome do site e a navegação -->
     <header>
         <div class="container">
-            <!-- Logo do site -->
+            <!-- Logotipo principal do site -->
             <h2 class="logo">GALOFLIX</h2>
-
-            <!-- Navegação principal -->
+            <!-- Links de navegação para as seções principais -->
             <nav>
                 <a href="#">Home</a>
                 <a href="#">Filmes</a>
@@ -36,29 +26,25 @@
         </div>
     </header>
 
-    <!-- Conteúdo principal da página -->
+    <!-- Seção de destaque para promover o conteúdo principal -->
     <main>
-        <!-- Filme principal em destaque -->
         <div class="filme-principal">
             <div class="container">
-                <!-- Título do filme / destaque -->
+                <!-- Título que aparece sobre a imagem de fundo -->
                 <h3 class="titulo">2021: O ANO DO GALO</h3>
-
-                <!-- Descrição curta do destaque -->
+                <!-- Texto que resume a história ou conteúdo exibido -->
                 <p class="descricao">
                     A Massa Atleticana viveu uma temporada mágica. Campeão Brasileiro, Mineiro e da Copa do Brasil, o Galo apresentou um futebol de encher os olhos. Grandes atuações dentro e fora de Belo Horizonte fizeram de 2021 o Ano do Galo.
                 </p>
-
-                <!-- Botões de ação do filme -->
+                <!-- Botões de ação que o usuário pode interagir -->
                 <div class="botoes">
-                    <!-- Botão para assistir o vídeo -->
-                    <button class="botao" aria-label="Assistir ao vídeo 2021: O Ano do Galo">
+                    <!-- Botão para assistir ao conteúdo -->
+                    <button role="button" class="botao">
                         <i class="fa-solid fa-play"></i>
                         ASSISTIR
                     </button>
-
-                    <!-- Botão para mais informações -->
-                    <button class="botao" aria-label="Mais informações sobre 2021: O Ano do Galo">
+                    <!-- Botão para exibir mais detalhes sobre o conteúdo -->
+                    <button role="button" class="botao">
                         <i class="fa-solid fa-circle-info"></i>
                         MAIS INFORMAÇÕES
                     </button>
@@ -67,19 +53,10 @@
         </div>
     </main>
 
-    <!-- Rodapé da página -->
+    <!-- Rodapé para informações adicionais e direitos autorais -->
     <footer>
-        <div class="container">
-            <!-- Informações de copyright -->
-            <p>© 2025 GaloFlix - Todos os direitos reservados</p>
-        </div>
+        <p>© 2025 GaloFlix - Todos os direitos reservados</p>
     </footer>
 
-    <!-- Comentário geral:
-        - Cada container mantém o conteúdo centralizado.
-        - Classes como "filme-principal", "botoes" e "botao" facilitam o CSS.
-        - Uso de aria-label aumenta acessibilidade para leitores de tela.
-        - Estrutura semântica: header, main, footer ajuda SEO e organização.
-    -->
 </body>
 </html>
