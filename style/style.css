@@ -31,45 +31,48 @@ body {
    Header e Navegação
    =========================== */
 header .container {
-    display: flex;                       /* layout em linha */
-    flex-direction: row;                 /* itens na horizontal */
-    align-items: center;                 /* alinha verticalmente ao centro */
-    justify-content: space-between;      /* espaço entre logo e nav */
+    display: flex;                       /* Usa Flexbox para o layout em linha */
+    flex-direction: row;                 /* Organiza os itens na horizontal */
+    align-items: center;                 /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between;      /* Cria espaço entre o logo e a navegação */
     padding: 20px 50px;
 }
 
 /* Logo do site */
 header .logo {
-    color: var(--vermelho);             /* cor vermelha */
-    font-family: "Arial Black", Times;  /* fonte do logo */
-    font-size: 40px;                     /* tamanho do logo */
+    color: var(--vermelho);             /* Cor vermelha */
+    font-family: "Arial Black", Times;  /* Fonte do logo */
+    font-size: 40px;                     /* Tamanho do logo */
     cursor: pointer;
+}
 
-    header nav a {
-    text-decoration: none;
-    color: #AAA;
-    margin-left: 15px;
+/* Links de navegação */
+header nav a {
+    text-decoration: none;               /* Remove o sublinhado dos links */
+    color: #AAA;                         /* Cor cinza para o texto */
+    margin-left: 15px;                   /* Adiciona espaço entre os links */
     font-size: 18px;
 }
 
 header nav a:hover {
-    color: #fff;
-    transition: .3s ease all;
+    color: #fff;                         /* Muda a cor para branco quando o mouse passa por cima */
+    transition: .3s ease all;            /* Adiciona uma transição suave */
 }
 
 /* 🎬 Filme principal */
 .filme-principal {
     font-size: 16px;
+    /* Combina um gradiente com a imagem de fundo para escurecê-la */
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)), url('../img/trofeus.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
+    background-size: cover;              /* Garante que a imagem cubra toda a área */
+    background-position: center;         /* Centraliza a imagem no container */
+    height: 70vh;                        /* Define a altura em 70% da viewport */
     display: flex;
-    align-items: center;
+    align-items: center;                 /* Alinha o conteúdo verticalmente no centro */
 }
 
 .filme-principal .container {
-    max-width: 700px;
+    max-width: 700px;                    /* Limita a largura do conteúdo do filme principal */
     padding: 0 50px;
 }
 
@@ -81,33 +84,33 @@ header nav a:hover {
 
 .filme-principal .descricao {
     margin-bottom: 30px;
-    line-height: 1.5;
+    line-height: 1.5;                    /* Define o espaçamento entre as linhas */
 }
 
 /* 🎯 Botões */
 .botao {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);   /* Fundo semi-transparente */
     border: none;
     color: white;
     padding: 15px 30px;
     margin-right: 15px;
     font-size: 16px;
-    cursor: pointer;
-    transition: .3s ease all;
+    cursor: pointer;                     /* Muda o cursor para uma mãozinha */
+    transition: .3s ease all;            /* Adiciona uma transição suave */
 }
 
 .botao:hover {
-    background-color: white;
+    background-color: white;             /* Muda a cor de fundo no hover */
     color: black;
 }
 
 .botao i {
-    margin-right: 8px;
+    margin-right: 8px;                   /* Espaço entre o ícone e o texto */
 }
 
 /* 📌 Rodapé */
 footer {
-    text-align: center;
+    text-align: center;                  /* Centraliza o texto */
     padding: 20px;
     font-size: 14px;
     color: #aaa;
