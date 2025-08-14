@@ -34,7 +34,7 @@ Feito como prática durante o curso **DIO | Inter**.
     ```bash
     git clone https://github.com/lucaspiinho/projeto-galoflix.git
 
-2. Abra o projeto no seu navegador:  
+2. Abra o projeto no seu navegador:
 - Abra index.html diretamente ou use o VS Code e a extensão Live Server.
 
 ---
