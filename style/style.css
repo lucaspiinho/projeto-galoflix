@@ -40,9 +40,8 @@ header .container {
 
 /* Logo do site */
 header .logo {
-    color: var(--vermelho);             /* Cor vermelha */
-    font-family: "Arial Black", Times;  /* Fonte do logo */
-    font-size: 40px;                     /* Tamanho do logo */
+    height: 40px;
+    width: auto;                    /* Tamanho do logo */
     cursor: pointer;
 }
 
